@@ -56,7 +56,7 @@ class MyLinkedList:
             self.size += 1
 
     def deleteAtIndex(self, index: int) -> None:
-        if index < 0 or index > self.size: # index가 LinkedList의 범위를 벗어날때
+        if index < 0 or index >= self.size: # index가 LinkedList의 범위를 벗어날때
             return
 
         curr = self.head
