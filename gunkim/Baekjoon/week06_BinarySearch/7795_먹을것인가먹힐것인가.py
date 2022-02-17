@@ -12,11 +12,11 @@ for _ in range(T):
         left, right = 0, len(B) - 1
         cnt = 0 # A가 B보다 큰 쌍의 갯수
         while left <= right:
-            num = (left + right) // 2 # 중간 index를 설정
-            if A[i] <= B[num]:
-                right = num - 1
+            mid = (left + right) // 2 # 중간 index를 설정
+            if A[i] <= B[mid]:
+                right = mid - 1
             else:
-                left = num + 1
+                left = mid + 1
                 cnt = left
         answer += cnt
 
