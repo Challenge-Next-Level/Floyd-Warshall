@@ -10,7 +10,7 @@ for _ in range(m):
 heap = []
 
 
-def dijkstra(start_node, dp): # 기본적인 다익스트라 구현
+def dijkstra(start_node, dp): # 기본적인 다익스트라 구현한다
     dp[start_node] = 0
     heapq.heappush(heap, [0, start_node])
     while heap:
