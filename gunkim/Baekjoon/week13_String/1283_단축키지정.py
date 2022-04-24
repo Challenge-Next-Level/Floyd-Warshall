@@ -13,26 +13,24 @@ for w in words:
     flag = 0
     word = ''
     for wl in w_lst:
-        if wl[0].upper() not in dict:  # 단축키가 없을 때
+        if wl[0].upper() not in dict and flag == 0:  # 단축키가 없을 때
             word += '[' + wl[0] + ']' + wl[1:] + ' '
             dict[wl[0].upper()] = wl.upper()
             flag = 1
         else:
-            word += wl
-    if flag == 1:
+            word += wl + ' '
+    if flag == 1: # 맨앞단어에서 단축키를 찾았을 때 출력 후 종료
         print(word)
         continue
     word = ''
-    for wl in w_lst:
+    for wl in w_lst: # 앞선 단계에서 출력하지 못했으니 다음 단계에서 단축키를 찾는다
         for idx in range(len(wl)):
-            if wl[idx].upper() not in dict:
-                print('[', wl[idx], ']', wl[idx:], end='')
+            if wl[idx].upper() not in dict and flag == 0: # 단축키가 없을 때
+                word += '[' + wl[idx] + ']' + wl[idx + 1:]
                 dict[wl[idx].upper()] = wl[idx:].upper()
                 flag = 1
                 break
-
-                print(wl[idx], end='')
-                continue
             else:
-
-        print(end=' ')
+                word += wl[idx]
+        word += ' '
+    print(word)
