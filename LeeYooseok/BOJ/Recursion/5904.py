@@ -1,7 +1,6 @@
 """
 문자열을 만들어주니, 메모리 초과가 뜬다.
 """
-import psutil
 
 n = int(input())
 

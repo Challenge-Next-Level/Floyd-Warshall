@@ -25,7 +25,6 @@ def moo(t, idx, length):
             print("o")
         return
 
-
     # 가운데 : [(length - (t + 3) ) // 2 : (length - (t + 3) ) // 2 + (t + 3)]
     if (length - (t + 3)) // 2 <= idx < (length - (t + 3)) // 2 + (t + 3):
         now_idx = idx - (length - (t + 3)) // 2
@@ -37,5 +36,6 @@ def moo(t, idx, length):
     # 왼쪽 : [ : (length - (t + 3) ) // 2]
     else:
         moo(t - 1, idx, (length - (t + 3)) // 2)
+
 
 moo(i, n - 1, new)
