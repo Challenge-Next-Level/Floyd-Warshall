@@ -7,14 +7,17 @@ for _ in range(n):
     flag = False
 
     # 각 단어 앞자리 확인
+    i = 0
     for w in words:
+
         if w[0].upper() not in short_cuts:
             short_cuts.add(w[0].upper())
+            words[i] = "[" + words[i][0] + "]" + words[i][1:]
             result = " ".join(words)
-            idx = result.find(w[0])
-            print(result[:idx] + "[" + w[0] + "]" + result[idx+1:])
+            print(result)
             flag = True
             break
+        i += 1
 
     second_flag = False
     if not flag:
@@ -33,4 +36,3 @@ for _ in range(n):
 
     if not flag and not second_flag:
         print(" ".join(words))
-
