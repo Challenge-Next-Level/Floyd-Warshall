@@ -1,6 +1,8 @@
 # back tracking 으로 경우의 수 만들기
-
 from collections import deque
+import sys
+
+input = sys.stdin.readline
 
 # 벽을 세울 수 있는 모든 경우의 수 확인
 n, m = map(int, input().split())
@@ -9,9 +11,10 @@ board = list()
 bugs = list()  # [y, x] 위치
 for i in range(n):
     temp = list(map(int, input().split()))
-    if temp.count(2) > 0:
-        for j in range(temp.count(2)):
-            bugs.append([i, temp.index(2, j)])
+
+    for j in range(m):
+        if temp[j] == 2:
+            bugs.append([i, j])
 
     board.append(temp)
 
@@ -41,7 +44,9 @@ def check():
                     visited[new_y][new_x] = 2
     result = 0
     for r in visited:
-        result += r.count(0)
+        for r_ in r:
+            if r_ == 0:
+                result += 1
 
     return result
 
