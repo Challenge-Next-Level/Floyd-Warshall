@@ -32,7 +32,7 @@ def move_dice(num):
         dice[3][1] = temp
 
 
-n, m, x, y, k = map(int, sys.stdin.readline().split())
+n, m, y, x, k = map(int, sys.stdin.readline().split())
 board = []
 for _ in range(n):
     board.append(list(map(int, sys.stdin.readline().split())))
