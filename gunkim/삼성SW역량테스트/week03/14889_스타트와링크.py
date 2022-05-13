@@ -1,53 +1,28 @@
-import sys
-
-n = int(sys.stdin.readline())
-board = []
-total = 0
-for i in range(n):
-    board.append(list(map(int, sys.stdin.readline().split())))
-    total += sum(board[i])
-answer = float('inf')
-size = n // 2
-
-
-def team_away(nums, idx, depth, res):
-    if idx == size:
-        print("jojo", res)
-        return int(res)
-    cal = 0
-    for i in range(idx + 1, size):
-        cal += board[nums[idx]][nums[i]] + board[nums[i]][nums[idx]]
-        print("cal", cal)
-    team_away(nums, idx + 1, depth + 1, res + cal)
-    return
-
-
-def team(nums, depth, result):
-    global answer
-    if depth == size:
-        nums_away, j = [], 0
+def dfs(depth, idx):
+    global min_diff
+    if depth == n//2:
+        power1, power2 = 0, 0
         for i in range(n):
-            if j < size and nums[j] == i:
-                j += 1
-                continue
-            nums_away.append(i)
-        print(nums_away)
-        x = int(team_away(nums_away, 0, 1, 0))
-        print(x)
-        answer = min(answer, abs(result - x))
+            for j in range(n):
+                if visited[i] and visited[j]:
+                    power1 += graph[i][j]
+                elif not visited[i] and not visited[j]:
+                    power2 += graph[i][j]
+        min_diff = min(min_diff, abs(power1-power2))
         return
-    if n - nums[-1] <= size - depth:
-        return
-    for idx in range(nums[-1] + 1, n):
-        cal = 0
-        for num in nums:
-            cal += board[num][idx] + board[idx][num]
-        nums.append(idx)
-        team(nums, depth + 1, result + cal)
-        nums.pop()
+
+    for i in range(idx, n):
+        if not visited[i]:
+            visited[i] = True
+            dfs(depth+1, i+1)
+            visited[i] = False
 
 
-for i in range(size + 1):
-    team([i], 1, 0)
+n = int(input())
 
-print(answer)
+visited = [False for _ in range(n)]
+graph = [list(map(int, input().split())) for _ in range(n)]
+min_diff = int(1e9)
+
+dfs(0, 0)
+print(min_diff)
