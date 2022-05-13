@@ -19,7 +19,7 @@ for i in range(len(operand)):
 
 po = set(list(permutations(o, len(o)))) # 순열연산으로 연산자의 배치 경우를 만든다
 max_val, min_val = -float('inf'), float('inf')
-max_A, min_A = max(A), min(A)
+
 for p in po: # 연산자의 배치 경우의 수를 모두 계산한다
     res = A[0]
     length = len(p)
