@@ -1,84 +1,47 @@
 import sys
 
-n, m, h = map(int, sys.stdin.readline().split())
-board = [[0] * n for _ in range(h)]
-for _ in range(m):
-    a, b = map(int, sys.stdin.readline().split())
-    board[a - 1][b - 1] = 1
 
-possible = []
-for y in range(h):
-    for x in range(n - 1):
-        if board[y][x] == 1:
-            continue
-        if x - 1 >= 0 and board[y][x - 1] == 1:
-            continue
-        if board[y][x + 1] != 1:
-            possible.append([y, x])
-length = len(possible)
-
-
-def is_answer():
-    for x in range(n):
-        node = [0, x]
-        if board[0][x] == 1:
-            node[1] += 1
-        elif board[0][x - 1] == 1:
-            node[1] -= 1
-        for _ in range(1, h):
-            node[0] += 1
-            if board[node[0]][node[1]] == 1:
-                node[1] += 1
-            elif board[node[0]][node[1] - 1] == 1:
-                node[1] -= 1
-        if node[1] != x:
+def check():
+    for i in range(n): # 각 출발점에서의 결과 확인
+        temp = i # 이동하는 세로선 위치
+        for j in range(h): # 가로선을 한 칸씩 내리면서 이동 확인 (중요!)
+            if graph[j][temp] == 1:  # 오른쪽 이동
+                temp += 1
+            elif temp > 0 and graph[j][temp - 1] == 1: # 왼쪽 이동
+                temp -= 1
+        if temp != i:
             return False
     return True
 
 
-def result():
-    if m == 0:
-        return 0
-    # 다리 1개 일 때
-    for p in possible:
-        ny, nx = p[0], p[1]
-        board[ny][nx] = 1
-        if is_answer():
-            return 1
-        board[ny][nx] = 0
-    # 다리 2개 일 때
-    for i in range(length - 1):
-        iy, ix = possible[i][0], possible[i][1]
-        board[iy][ix] = 1
-        for j in range(i + 1, length):
-            jy, jx = possible[j][0], possible[j][1]
-            if board[jy][jx] == 1 or (jx - 1 >= 0 and board[jy][jx - 1] == 1) or board[jy][jx + 1] == 1:
-                continue
-            board[jy][jx] = 1
-            if is_answer():
-                return 2
-            board[jy][jx] = 0
-        board[iy][ix] = 0
-    # 다리 3개 일 때
-    for i in range(length - 2):
-        iy, ix = possible[i][0], possible[i][1]
-        board[iy][ix] = 1
-        for j in range(i + 1, length - 1):
-            jy, jx = possible[j][0], possible[j][1]
-            if board[jy][jx] == 1 or (jx - 1 >= 0 and board[jy][jx - 1] == 1) or board[jy][jx + 1] == 1:
-                continue
-            board[jy][jx] = 1
-            for k in range(j + 1, length):
-                ky, kx = possible[k][0], possible[k][1]
-                if board[ky][kx] == 1 or (kx - 1 >= 0 and board[ky][kx - 1] == 1) or board[ky][kx + 1] == 1:
-                    continue
-                board[ky][kx] = 1
-                if is_answer():
-                    return 3
-                board[ky][kx] = 0
-            board[jy][jx] = 0
-        board[iy][ix] = 0
-    return -1
+def dfs(cnt, y, x): # cnt: 가로선을 만든 횟수
+    global ans
+    if ans <= cnt: # 백트래킹: cnt가 현재 ans보다 크거나 같다면 빨리 return하고 최적의해를 다른 경우에서 찾는다
+        return
+    if check(): # 현재 사다리가 유효한지 확인
+        ans = min(ans, cnt)
+        return
+    for i in range(y, h): # 세로 축 이동, 현재축(y,x)에서 내려갈 일 밖에 없기 때문에 [y:h]범위임
+        if i != y:
+            x = 0
+        for j in range(x, n - 1): # 가로 축 이동, 현재축(y,x) 포함 및 이후로 다리를 놓는 경우를 따져야 하기 때문에 [k:n-1]범위
+            if graph[i][j] == 0: # 0인 경우 가로줄 만들고, 연속된 가로선을 만들지 않기 위해 j + 2호출
+                graph[i][j] = 1
+                dfs(cnt + 1, i, j + 2)
+                graph[i][j] = 0
 
 
-print(result())
+n, m, h = map(int, sys.stdin.readline().split())  # 세로, 다리를 잇는 다리 수, 가로
+graph = [[0] * n for _ in range(h)]
+
+for _ in range(m):
+    a, b = map(int, sys.stdin.readline().split()) # 다리의 좌표
+    graph[a - 1][b - 1] = 1
+
+ans = 4
+dfs(0, 0, 0)
+
+if ans <= 3:
+    print(ans)
+else:
+    print(-1)
