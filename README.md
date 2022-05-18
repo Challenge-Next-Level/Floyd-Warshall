@@ -69,32 +69,64 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
 ---
 ### Week 08 ~ 09 - Dijkstra
 - 백준
-  - week 08
+  - Week 08
     - [1753](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/1753.py), [14284](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/14284.py) solved by LeeYooseok
     - [1916](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week08_Dijkstra/1916_%EC%B5%9C%EC%86%8C%EB%B9%84%EC%9A%A9%EA%B5%AC%ED%95%98%EA%B8%B0.py), [13549](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week08_Dijkstra/13549_%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%883.py) solved by gunkim
-  - week 09 : ①
+  - Week 09 : ①
     - [1719](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/1719.py), [2665](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/2665.py) solved by LeeYooseok
     - [1238](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week09_Dijkstra2/1238_%ED%8C%8C%ED%8B%B0.py), [1261](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week09_Dijkstra2/1261_%EC%95%8C%EA%B3%A0%EC%8A%A4%ED%8C%9F.py) solved by gunkim
-  - week 09 : ②
+  - Week 09 : ②
     - [18223](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/18223.py), [6087](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Dijkstra/6087.py) solved by LeeYooseok
     - [11909](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week09_Dijkstra2/11909_%EB%B0%B0%EC%97%B4%ED%83%88%EC%B6%9C.py), [11779](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week09_Dijkstra2/11779_%EC%B5%9C%EC%86%8C%EB%B9%84%EC%9A%A9%EA%B5%AC%ED%95%98%EA%B8%B02.py) solved by gunkim
+
 ---
-### Week 10 - Two Pointer
+### Week 10 ~ 11 - Two Pointer
 - 백준
-  - week 10 : ①
+  - Week 10
     - [2118](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/2118.py), [15961](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/15961.py) solved by LeeYooseok
     - [2467](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week10_TwoPointer/2467_%EC%9A%A9%EC%95%A1.py), [3273](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week10_TwoPointer/3273_%EB%91%90%EC%88%98%EC%9D%98%ED%95%A9.py) solved by gunkim
-  - week 10 : ②
+  - Week 11 : ①
     - [20366](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/20366.py), [2473](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/2473.py) solved by LeeYooseok
     - [2230](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week11_TwoPointer2/2230_%EC%88%98%EA%B3%A0%EB%A5%B4%EA%B8%B0.py), [1644](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week11_TwoPointer2/1644_%EC%86%8C%EC%88%98%EC%9D%98%EC%97%B0%EC%86%8D%ED%95%A9.py) solved by gunkim
-  
----
+  - Week 11 : ②
+    - [14465](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/14465.py), [16472](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/TwoPointer/16472.py) solved by LeeYooseok
+    - [2018](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week11_TwoPointer2/2018_%EC%88%98%EB%93%A4%EC%9D%98%ED%95%A95.py) solved by gunkim
 
-### Week 11 - Recursion
+---
+### Week 12 - Recursion
 - 백준
-    - Week 11 : ①
+    - Week 12 : ①
         - [1030](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Recursion/1030.py), [23250](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Recursion/23250.py) solved by LeeYooseok
-        - [1074](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week12_Recursion/1074_Z.py), [1780]() solved by gunkim
-    - week 11 : ②
+        - [1074](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week12_Recursion/1074_Z.py) solved by gunkim
+    - Week 12 : ②
         - [4779](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Recursion/4779.py), [5904](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/Recursion/5904s.py) solved by LeeYooseok
-        - [2630](), [2447]() solved by gunkim
+        - [2630](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week12_Recursion/2630_%EC%83%89%EC%A2%85%EC%9D%B4%EB%A7%8C%EB%93%A4%EA%B8%B0.py), [2447](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week12_Recursion/2447_%EB%B3%84%EC%B0%8D%EA%B8%B0.py) solved by gunkim
+
+---
+### Week 13 - String
+- 백준
+    - Week 13 : ①
+        - [9935](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/String/9935.py), [6443](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/String/6443.py) solved by LeeYooseok
+        - [16120](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week13_String/16120_PPAP.py), [2671](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week13_String/2671_%EC%9E%A0%EC%88%98%ED%95%A8%EC%8B%9D%EB%B3%84.py) solved by gunkim
+    - Week 13 : ②
+        - [2608](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/String/2608.py), [1283](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/String/1283.py) solved by LeeYooseok
+        - [5525](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week13_String/5525_IOIOI.py), [1254](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/Baekjoon/week13_String/1254_%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EB%A7%8C%EB%93%A4%EA%B8%B0.py) solved by gunkim
+    
+---
+## 삼성 SW 역량 테스트
+- 백준
+    - Week 01
+        - [3190](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week01/3190_%EB%B1%80.py) solved by gunkim
+        - [13460](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week01/13460%20%EA%B5%AC%EC%8A%AC%20%ED%83%88%EC%B6%9C%202.py), [13458](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week01/13458%20%EC%8B%9C%ED%97%98%20%EA%B0%90%EB%8F%85.py) solved by LeeYooseok
+    
+    - Week 02
+        - [14499](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week02/14499_%EC%A3%BC%EC%82%AC%EC%9C%84%EA%B5%B4%EB%A6%AC%EA%B8%B0.py), [14500](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week02/14500_%ED%85%8C%ED%8A%B8%EB%A1%9C%EB%AF%B8%EB%85%B8.py) solved by gunkim
+        - [14501](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week02/14501%20%ED%87%B4%EC%82%AC.py), [14502](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week02/14502%20%EC%97%B0%EA%B5%AC%EC%86%8C.py) solved by LeeYooseok
+    
+    - Week 03
+        - [14503](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week03/14503_%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0.py), [14888](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week03/14888_%EC%97%B0%EC%82%B0%EC%9E%90%EB%81%BC%EC%9B%8C%EB%84%A3%EA%B8%B0.py) solved by gunkim
+        - [14889](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week03/14889%20%EC%8A%A4%ED%83%80%ED%8A%B8%EC%99%80%20%EB%A7%81%ED%81%ACs.py), [14890](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/LeeYooseok/BOJ/%EC%82%BC%EC%84%B1%20SW%20%EC%97%AD%EB%9E%B5%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/week03/14890%20%EA%B2%BD%EC%82%AC%EB%A1%9C.py) solved by LeeYooseok
+    
+    - Week 04
+        - [15684](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week04/15684_%EC%82%AC%EB%8B%A4%EB%A6%AC%EC%A1%B0%EC%9E%91.py), [15685](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week04/15685_%EB%93%9C%EB%9E%98%EA%B3%A4%EC%BB%A4%EB%B8%8C.py) solved by gunkim
+        - [14891](), [15683]() solved by LeeYooseok
