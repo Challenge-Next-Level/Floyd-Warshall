@@ -10,7 +10,6 @@ result = sys.maxsize
 
 team = list(combinations(nums, n // 2))
 
-
 def check(team):
     temp = 0
     pairs = list(combinations(team, 2))

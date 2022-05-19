@@ -19,6 +19,7 @@ def dfs(summit, paths, cur, intensity):
             return
     else:
         for path in paths:
+            # in 메소드 시간 생각
             if path[0] == cur[-1] and path[1] not in gate_list and path[1] not in cur:
                 dfs(summit, paths, cur + [path[1]], max(intensity, path[2]))
 
@@ -44,7 +45,6 @@ def solution(n, paths, gates, summits):
             dfs(s, paths, [g], 0)
 
     print(result_summit, result)
-    print()
 
 
 solution(6, [[1, 2, 3], [2, 3, 5], [2, 4, 2], [2, 5, 4], [3, 4, 4], [4, 5, 3], [4, 6, 1], [5, 6, 1]], [1, 3], [5])
