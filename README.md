@@ -23,6 +23,10 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
 
 
 ## Study Log
+### 모르던 개념 정리
+1. [shallow copy와 deep copy 그리고 slicing](https://blog.naver.com/harrison1995/222739006202)
+
+---
 ### Week 01 - Brute Force(완전 탐색)
 - 백준
     - Week 01
