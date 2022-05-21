@@ -9,16 +9,17 @@ d = [[0,1], [0, -1], [1,0], [-1,0]]
 
 def dfs(y, x, visit):
     stack = [[y,x]]
-    visit[y][x] = 1
-    location = [[y, x]]
+    location = []
     while stack:
         sy, sx = stack.pop()
+        if visit[sy][sx] == 1:
+            continue
+        visit[sy][sx] = 1  # visit 처리를 하는 위치가 탐색할 때 중요하다!
+        location.append([sy, sx])
         for dy, dx in d:
             ny, nx = sy + dy, sx + dx
             if 0 <= ny < N and 0 <= nx < N and L <= abs(country[ny][nx] - country[sy][sx]) <= R and visit[ny][nx] == 0:
                 stack.append([ny, nx])
-                visit[ny][nx] = 1 # visit 처리를 하는 위치가 탐색할 때 중요하다!
-                location.append([ny, nx])
     return location # 좌표만 반환해도 답을 구할 수 있음
 
 
