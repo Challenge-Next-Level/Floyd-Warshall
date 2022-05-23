@@ -38,7 +38,7 @@ def able_check(checked_graph):
 
 def check(cnt, start_x, start_y, graph):
     global result, flag
-    if cnt > 3:
+    if cnt >= result:
         return
     else:
         # 가능한지 확인
@@ -63,7 +63,7 @@ def check(cnt, start_x, start_y, graph):
                 else:
                     check(cnt + 1, start_x, start_y + 1, graph)
 
-                graph[i + 1].remove(j + 1)
+                graph[i + 1].pop()
 
 
 check(0, 0, 0, graph)
