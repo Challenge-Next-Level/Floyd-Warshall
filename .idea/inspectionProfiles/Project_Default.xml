@@ -12,6 +12,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="list.__sub__" />
+          <option value="list.pop" />
         </list>
       </option>
     </inspection_tool>
