@@ -45,13 +45,13 @@ def find_eat_fish():
 
     # 현재 위치 이동 시간, x, y
     queue = [[0, baby_shark[0], baby_shark[1]]]
+    visited[baby_shark[1]][baby_shark[0]] = 1
 
     # 이동 시간, y축 위치, x축 위치
     eat_fish = [sys.maxsize, N, N]
 
     while queue:
         until_time, now_x, now_y = queue.pop(0)
-        visited[now_y][now_x] = 1
 
         for k in range(4):
             new_x, new_y = now_x + dx[k], now_y + dy[k]
@@ -78,6 +78,7 @@ def find_eat_fish():
 
             # 최소 이동 시간 >= 다음 위치의 이동시간 일때만 이동
             if eat_fish[0] >= until_time + 1:
+                visited[new_y][new_x] = 1
                 queue.append([until_time + 1, new_x, new_y])
 
     if eat_fish[0] == sys.maxsize:
