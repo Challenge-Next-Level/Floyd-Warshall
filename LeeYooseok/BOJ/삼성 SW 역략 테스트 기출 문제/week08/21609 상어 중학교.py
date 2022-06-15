@@ -145,14 +145,16 @@ while True:
 
 
     # 90도 반시계 방향 회전
-    new_board = [[0 for _ in range(N)] for _ in range(N)]
-    for r_x in range(N):
-        for r_y in range(N-1, -1, -1):
-            new_board[N-1 - r_x][r_y] = board[r_y][r_x]
-    board = [item[:] for item in new_board]
-    # 90도 시계방향 3번 회전
-    # for _ in range(3):
-    #     board = list(zip(*board[::-1]))
+    # new_board = [[0 for _ in range(N)] for _ in range(N)]
+    # for r_x in range(N):
+    #     for r_y in range(N-1, -1, -1):
+    #         new_board[N-1 - r_x][r_y] = board[r_y][r_x]
+    # board = [item[:] for item in new_board]
+    # 90도 반시계 방향
+    new_board = list(zip(*board))
+    new_board.reverse()
+    for i in range(N):
+        board[i] = list(new_board[i])
 
     # 중력 - 열 기준 맨 밑에서부터 내린다.
     board = Z(board)
