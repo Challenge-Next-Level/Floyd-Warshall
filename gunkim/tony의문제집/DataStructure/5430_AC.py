@@ -1,7 +1,7 @@
 import sys
 from collections import deque
 
-t = int(sys.stdin.readline()[0]) # 테스트 케이스 수
+t = int(sys.stdin.readline()) # 테스트 케이스 수
 
 
 def calculation(ch, st): # 연산자, 덱(dequeue)
@@ -24,7 +24,7 @@ def calculation(ch, st): # 연산자, 덱(dequeue)
 for _ in range(t): # 테스트 때 마다 변수 초기화
     isReverse = 0
     case = sys.stdin.readline().split()[0]
-    n = int(sys.stdin.readline()[0])
+    n = int(sys.stdin.readline())
     stack = list(sys.stdin.readline()[1:-2].split(','))
     if stack[0] != '':
         stack = deque(map(int, stack))
