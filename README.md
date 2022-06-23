@@ -150,3 +150,20 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
     - Week 07 : ②
       - [19236](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week07/19236_%EC%B2%AD%EC%86%8C%EB%85%84%EC%83%81%EC%96%B4.py), [19237](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week07/19237_%EC%96%B4%EB%A5%B8%EC%83%81%EC%96%B4.py) solved by gunkim
       - [17825](), [20061]() solved by LeeYooseok
+
+    - Week 08 : ①
+        - [19238](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week08/19238_%EC%8A%A4%ED%83%80%ED%8A%B8%ED%83%9D%EC%8B%9C.py), [20055](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week08/20055_%EC%BB%A8%EB%B2%A0%EC%9D%B4%EC%96%B4%EB%B2%A8%ED%8A%B8%EC%9C%84%EC%9D%98%EB%A1%9C%EB%B4%87.py) solved by gunkim
+        - [20056](), [20057]() solved by LeeYooseok
+
+    - Week 08 : ②
+      - [21609](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week08/21609_%EC%83%81%EC%96%B4%EC%A4%91%ED%95%99%EA%B5%90.py), [21610](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week08/21610_%EB%A7%88%EB%B2%95%EC%82%AC%EC%83%81%EC%96%B4%EC%99%80%EB%B9%84%EB%B0%94%EB%9D%BC%EA%B8%B0.py) solved by gunkim
+      - [20058](), [21608]() solved by LeeYooseok
+
+    - Week 09
+        - [23288](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week09/23288_%EC%A3%BC%EC%82%AC%EC%9C%84%EA%B5%B4%EB%A6%AC%EA%B8%B02.py), [23289](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/%EC%82%BC%EC%84%B1SW%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8/week09/23289_%EC%98%A8%ED%92%8D%EA%B8%B0%EC%95%88%EB%85%95.py) solved by gunkim
+        - [23290](), [23291]() solved by LeeYooseok
+
+---
+## 알고리즘 공부 AGAIN
+- [tony9402's Github](https://github.com/tony9402/baekjoon)
+  - Week 01 : Data Structure
