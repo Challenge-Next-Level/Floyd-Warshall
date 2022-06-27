@@ -1,3 +1,4 @@
+# recommend 일때 heap에서 pop을 해야하는 줄 알았음. 풀이 성공!
 import sys
 import heapq
 
@@ -30,8 +31,6 @@ for _ in range(m):
         visited[dict[int(case[1])]] = True
     elif case[0] == 'recommend':
         if case[1] == '1' and maxHeap:
-            visited[maxHeap[0][2]] = True
             print(-maxHeap[0][1])
         elif case[1] == '-1' and minHeap:
-            visited[minHeap[0][2]] = True
             print(minHeap[0][1])
