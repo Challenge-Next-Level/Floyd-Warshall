@@ -166,6 +166,9 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
 ---
 ## 알고리즘 공부 AGAIN
 - [tony9402's Github](https://github.com/tony9402/baekjoon)
+
+---
+### Week 01 ~ 02 - Data Structure
   - Week 01 : Data Structure ①
     - [22942](), [1918]() solved by LeeYooseok
     - [2800](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/2800_%EA%B4%84%ED%98%B8%EC%A0%9C%EA%B1%B0.py), [2493](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/2493_%ED%83%91.py) solved by gunkim
@@ -182,6 +185,8 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
     - [21942](), [17255]() solved by LeeYooseok
     - [21944](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/21944_%EB%AC%B8%EC%A0%9C%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9CVersion2.py), [2696](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/2696_%EC%A4%91%EC%95%99%EA%B0%92%EA%B5%AC%ED%95%98%EA%B8%B0.py) solved by gunkim
 
+---
+### Week 03 - Tree
   - Week 03 : Tree ①
     - [](), []() solved by LeeYooseok
     - [](), []() solved by gunkim
