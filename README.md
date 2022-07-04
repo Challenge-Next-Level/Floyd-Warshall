@@ -166,4 +166,22 @@ Dijkstra 알고리즘 스터디 이후 두 번째 스터디입니다.
 ---
 ## 알고리즘 공부 AGAIN
 - [tony9402's Github](https://github.com/tony9402/baekjoon)
-  - Week 01 : Data Structure
+  - Week 01 : Data Structure ①
+    - [22942](), [1918]() solved by LeeYooseok
+    - [2800](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/2800_%EA%B4%84%ED%98%B8%EC%A0%9C%EA%B1%B0.py), [2493](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/2493_%ED%83%91.py) solved by gunkim
+
+  - Week 01 : Data Structure ②
+    - [2346](), [5430]() solved by LeeYooseok
+    - [1966](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/1966_%ED%94%84%EB%A6%B0%ED%84%B0%ED%81%90.py), [1863](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure/1863_%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%9D%BC%EC%9D%B8%EC%89%AC%EC%9A%B4%EA%B1%B0.py) solved by gunkim
+
+  - Week 02 : Data Structure2 ①
+    - [14425](), [21939]() solved by LeeYooseok
+    - [1620](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/1620_%EB%82%98%EB%8A%94%EC%95%BC%ED%8F%AC%EC%BC%93%EB%AA%AC%EB%A7%88%EC%8A%A4%ED%84%B0%EC%9D%B4%EB%8B%A4%EC%86%9C.py), [7662](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/7662_%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90.py) solved by gunkim
+
+  - Week 02 : Data Structure2 ②
+    - [21942](), [17255]() solved by LeeYooseok
+    - [21944](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/21944_%EB%AC%B8%EC%A0%9C%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9CVersion2.py), [2696](https://github.com/Challenge-Next-Level/Floyd-Warshall/blob/master/gunkim/tony%EC%9D%98%EB%AC%B8%EC%A0%9C%EC%A7%91/DataStructure2/2696_%EC%A4%91%EC%95%99%EA%B0%92%EA%B5%AC%ED%95%98%EA%B8%B0.py) solved by gunkim
+
+  - Week 03 : Tree ①
+    - [](), []() solved by LeeYooseok
+    - [](), []() solved by gunkim
