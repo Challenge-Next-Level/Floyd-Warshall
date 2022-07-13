@@ -1,7 +1,8 @@
-# 2:기둥, 1:기가노드, 0:가지
+# 재귀 제한 넉넉히 하니까 '시간초과' 해결됨.
+# 반례)루트 노드에서 바로 여러 가지로 나뉠 수 있음. 즉 루트 노드가 기가 노드가 될 수 있음.
 import sys
 
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(1000000)
 n, r = map(int, sys.stdin.readline().split())
 tree = [[] for _ in range(n + 1)]
 for _ in range(n-1):
@@ -14,6 +15,9 @@ nodeNumber = [0 for _ in range(n+1)]
 
 def find(node):
     global r
+    if node == r and len(tree[node]) >= 2: # 루트노드가 기가노드일 수 있음(반례 처리)
+        nodeNumber[node] = 1
+        return node
     if len(tree[node]) > 2:
         nodeNumber[node] = 1
         return node
@@ -44,11 +48,12 @@ gigaNode = find(r) # 기가 노드를 찾는다
 visit = [0 for _ in range(n+1)]
 answer1, answer2 = 0, 0
 
-if gigaNode is not None:
+if gigaNode is not None: # 가지가 있을 때
     visit[gigaNode] = 1
     dfs(gigaNode, 2, 0)
     dfs(gigaNode, 0, 0)
-else:
+else: # 기둥만 있을 때
     visit[r] = 1
     dfs(r, 2, 0)
+
 print(answer1, answer2)
