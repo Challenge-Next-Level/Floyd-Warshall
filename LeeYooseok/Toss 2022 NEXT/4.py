@@ -1,4 +1,6 @@
 # 제출 못함 (아쉬움)
+# 내가 초대한 사람 * 10 + 내가 초대한 사람이 초대한 사람 * 3 + 내가 초대한 사람이 초대한 사람이 초대한 사람
+# 점수 순 -> 마지막으로 초대한 순 : 내림차순 3명 출력
 def solution(invitationPairs):
     graph = dict()
     score = dict()
@@ -26,23 +28,23 @@ def solution(invitationPairs):
     for p in score.keys():
         s1, s2, s3 = score[p][1]
         score[p][1] = s1 * 10 + s2 * 3 + s3
-
-    answer = sorted(score.items(), key = lambda x : (x[1][1], x[1][0]), reverse=True)
+    answer = sorted(score.items(), key=lambda x: (x[1][1], x[1][0]), reverse=True)
     t = list()
     for a in answer[:3]:
         t.append(a[0])
     return t
 
+
 print(solution(
     [
-        [1,2],
-        [2,3],
-        [2,4],
-        [2,5],
-        [5,6],
-        [5,7],
-        [6,8],
-        [2,9],
+        [1, 2],
+        [2, 3],
+        [2, 4],
+        [2, 5],
+        [5, 6],
+        [5, 7],
+        [6, 8],
+        [2, 9],
 
     ]
 ))

@@ -15,8 +15,8 @@ def solution(tasks):
         else:
             answer += (v // 3)
             if v % 3 == 1:
-                answer += 1
+                answer += 1 # -> 4원 : 2원 * 2 -3원 * 1
             elif v % 3 == 2:
-                answer += 1
+                answer += 1 # -> 2원 : 2원 * 1
 
     return answer

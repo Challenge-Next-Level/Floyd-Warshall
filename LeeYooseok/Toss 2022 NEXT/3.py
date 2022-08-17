@@ -1,4 +1,4 @@
-# 통과
+# 통과 - 가장 많이 탐험할 수 있는 던전의 개수 - dp?
 def s(k, num, visited, dungeons):
     global answer
     chk = False

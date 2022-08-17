@@ -1,4 +1,6 @@
-# 통과 못함
+# 통과 못함 - 시간 초과
+# money : 갖고있는 돈, stocks : [[가치, 비용]]
+# 이익을 가장 크게하는 경우
 def s(m, profit, visited, stocks):
     global answer
     chk = False
@@ -21,6 +23,14 @@ def solution(money, stocks):
     s(money, 0, [False for _ in range(len(stocks))], stocks)
 
     return answer
+
+# dp 활용
+def new_solution(money, stocks):
+    new_answer = 0
+
+    dp = []
+
+    return new_answer
 
 
 print(solution(10, [[1, 1], [3, 5], [3, 5], [4, 9]]))

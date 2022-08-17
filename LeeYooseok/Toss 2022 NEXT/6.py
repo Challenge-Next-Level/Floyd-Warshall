@@ -1,4 +1,5 @@
 # 통과
+#
 def solution(steps_one, names_one, steps_two, names_two, steps_three, names_three):
     one_dict = dict()
     for n, s in zip(names_one, steps_one):
