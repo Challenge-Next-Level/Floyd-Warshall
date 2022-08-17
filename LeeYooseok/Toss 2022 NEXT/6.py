@@ -1,5 +1,7 @@
-# 통과
-#
+# 통과 - 만보기
+# 1, 2, 3 단계 합쳐서 만보기 걸음 횟수가 많은 순서대로 이름 출력
+# 각 단계에서 같은 이름 나오면 더 많이 걸은 횟수로 취급
+# 최종 단계에서 걸음 횟수가 같으면 사전순으로 출력
 def solution(steps_one, names_one, steps_two, names_two, steps_three, names_three):
     one_dict = dict()
     for n, s in zip(names_one, steps_one):
