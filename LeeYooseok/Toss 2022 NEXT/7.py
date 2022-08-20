@@ -35,7 +35,7 @@ def new_solution(money, stocks):
     # 행에는 주식의 종류, 열에는 현재 갖고있는 돈 으로 dp 배열을 만들어 줍니다.
     dp = [[0 for _ in range(money + 1)] for _ in range(n)]
 
-    # 각각의 주식을 선택할 때마다 최고의 가치를 구할 수 있도록 해준다.
+    # 각각의 주식을 선택할 때마다 가능한 금액으로 얻을 수 있는 최고의 가치를 구할 수 있도록 해준다.
     for i in range(n):
         for j in range(1, money + 1):
             value = stocks[i][0]
@@ -44,7 +44,7 @@ def new_solution(money, stocks):
             # 현재 가능한 돈의 액수 보다, 주식의 비용이 더 크면
             if j < price:
                 # 해당 주식은 선택할 수 없다.
-                # 즉 같은 비용, 이전 주식 단계의 최대 가치를 그대로 가져온다.
+                # 즉 같은 비용, 이전 주식 단계의 동일 금액의 최대 가치를 그대로 가져온다.
                 dp[i][j] = dp[i - 1][j]
             # 해당 주식을 선택할 수 있다면
             else:

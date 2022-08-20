@@ -34,7 +34,6 @@ def solution(invitationPairs):
         t.append(a[0])
     return t
 
-
 print(solution(
     [
         [1, 2],
@@ -48,3 +47,58 @@ print(solution(
 
     ]
 ))
+
+class Node:
+    def __init__(self, parent, idx=None):
+        self.score = 0
+        self.parent = parent
+
+        if idx:
+            self.idx = idx
+        else:
+            self.idx = -1
+
+
+def new_solution(invitationPairs):
+    node_dict = dict()
+    for idx in range(len(invitationPairs)):
+        pair = invitationPairs[idx]
+
+        if pair[0] not in node_dict.keys():
+            node_dict[pair[0]] = Node(None, idx)
+        else:
+            node_dict[pair[0]].idx = idx
+
+        if pair[1] not in node_dict.keys():
+            node_dict[pair[1]] = Node(node_dict[pair[0]])
+
+        node_child = node_dict[pair[1]]
+
+        node_child.parent.score += 10
+
+        if node_child.parent.parent is not None:
+            node_child.parent.parent.score += 3
+
+            if node_child.parent.parent.parent is not None:
+                node_child.parent.parent.parent.score += 1
+
+    answer = sorted(node_dict.items(), key=lambda x: (x[1].score, x[1].idx), reverse=True)
+    t = list()
+    for a in answer[:3]:
+        t.append(a[0])
+    return t
+
+
+print(new_solution([
+    [1, 2],
+    [2, 3],
+    [2, 4],
+    [2, 5],
+    [5, 6],
+    [5, 7],
+    [6, 8],
+    [2, 9],
+
+]))
+
+
