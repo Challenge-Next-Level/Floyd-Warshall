@@ -24,7 +24,7 @@ def holic(number, count):
         minAns = min(minAns, count + cnt)
         maxAns = max(maxAns, count + cnt)
         return
-    elif 0 < number // 10 < 9: # 두 자리수일 때
+    elif 0 < number // 10 <= 9: # 두 자리수일 때
         first, second = number // 10, number % 10
         holic(first + second, count + cnt)
     else: # 세 자리수 이상일 때
