@@ -1,0 +1,1 @@
+SELECT TRUNC(AVG(population)) FROM CITY;
