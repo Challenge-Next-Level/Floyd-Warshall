@@ -16,6 +16,7 @@
         <list>
           <option value="list.__sub__" />
           <option value="list.pop" />
+          <option value="map.__add__" />
         </list>
       </option>
     </inspection_tool>
