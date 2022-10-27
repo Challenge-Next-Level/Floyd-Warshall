@@ -12,7 +12,6 @@ for n in range(N): # 어느 행에서 시작할 것인가?
                 if dif_m == 0 and dif_n == 0:
                     continue
 
-                step = 0
                 y = n # 현재 행
                 x = m # 현재 열
                 value = ''
@@ -21,7 +20,6 @@ for n in range(N): # 어느 행에서 시작할 것인가?
                 while (0 <= y < N) and (0 <= x < M):
                     # 숫자 조합
                     value += str(board[y][x])
-                    step += 1
 
                     # 제곱수 이고, 최댓값 갱신이 가능한지 확인
                     value_int = int(value)
@@ -31,7 +29,7 @@ for n in range(N): # 어느 행에서 시작할 것인가?
                     if value_decimal == 0:
                         answer = max(value_int, answer)
 
-                    y = n + step * dif_n
-                    x = m + step * dif_m
+                    y += dif_n
+                    x += dif_m
 
 print(answer)

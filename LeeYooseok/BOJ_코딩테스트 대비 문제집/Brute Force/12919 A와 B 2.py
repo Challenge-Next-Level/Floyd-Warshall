@@ -1,6 +1,4 @@
 # 핵심 : S -> T 가 아닌 T -> S 로 하여 재귀 횟수를 줄인다.
-import sys
-sys.setrecursionlimit(10**6)
 
 S = input()
 T = input()
