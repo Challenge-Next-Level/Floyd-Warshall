@@ -22,4 +22,4 @@ while True:
 
         print(result)
     except EOFError:
-        brea
+        break
