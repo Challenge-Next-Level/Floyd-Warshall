@@ -36,7 +36,7 @@ result_list = list()
 for r in range(N):
     for c in range(N):
         if not visited[r][c] and board[r][c] == 1:
-            result_list.append(dfs(r, c))
+            result_list.append(bfs(r, c))
             result += 1
 
 print(result)
