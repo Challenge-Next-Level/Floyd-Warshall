@@ -22,7 +22,8 @@ public class Main {
 
     public int find(int node, int[] parent) {//최종 root node를 찾아 반환
         if (parent[node] == node) return node;
-        return find(parent[node], parent);
+        parent[node] = find(parent[node], parent);
+        return parent[node];
     }
 
     public void union(int node1, int node2, int[] parent, int[] rank) {//두 개의 트리를 합친다.
