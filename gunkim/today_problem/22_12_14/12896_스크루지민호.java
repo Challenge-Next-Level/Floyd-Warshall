@@ -25,7 +25,7 @@ public class Main {
     for (int i = 0; i <= n; i++) {
       list[i] = new ArrayList<>(); //list란 배열을 ArrayList로 초기화
     }
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < n - 1; i++) { //n-1 개의 도로
       st = new StringTokenizer(br.readLine());
       int u = Integer.parseInt(st.nextToken());
       int v = Integer.parseInt(st.nextToken());
@@ -33,20 +33,20 @@ public class Main {
       list[v].add(new Pair(u, 1));
     }
 
-    //2.가장 길이(cost)가 긴 자식을 리턴
+    //2.랜덤한 노드(여기선 1번 노드)를 선택하여 가장 거리가 먼 노드를 찾는다.
     Pair p = dfs(1);
     visit = new boolean[n + 1];
-    //3.가장 길이가 긴 자식에서 다시 dfs를 돈다.
+    //3.위에서 찾은 노드에서 가장 거리가 먼 노드를 다시 찾는다. 이 거리는 곧, 트리의 지름이 된다.
+    //결국 정답은 트리의 지름을 묻고 있는 것이다.
     Pair r = dfs(p.v);
-    //4.가장 먼 정점과의 거리 중 최소값
+    //4.트리의 지름 값을 반으로 나눈 값이 정답이 된다.
     System.out.println((1 + r.cost) / 2);
   }
 
 
   static Pair dfs(int cur) {
     Pair result = new Pair(cur, 0);
-    // 노드 방문처리
-    visit[cur] = true;
+    visit[cur] = true; // 노드 방문처리
     for (Pair next : list[cur]) { //cur 도시에서 갈 수 있는 도시 탐색
       if (visit[next.v]) continue;
       Pair x = dfs(next.v); //방문하지 않은 곳 dfs 탐색
