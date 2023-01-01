@@ -63,6 +63,7 @@ for l in L_list:
 # 남아 있는 얼음의 양의 합
 sum_result = 0
 for b in A_board:
+    print(b)
     sum_result += sum(b)
 print(sum_result)
 
