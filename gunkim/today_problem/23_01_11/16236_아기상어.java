@@ -24,7 +24,7 @@ public class Main {
         visit[shark.y][shark.x] = true;
         while (!dq.isEmpty()) {//bfs 탐색 시작
             Coordinate s = dq.pollFirst();
-            if (board[s.y][s.x] != 0 && board[s.y][s.x] != 9) { //물고기 발견
+            if (board[s.y][s.x] != 0) { //물고기 발견
                 if (board[s.y][s.x] < size) { //상어보다 작은지 확인
                     target.offer(new Coordinate(s.y, s.x, s.dist));//타겟 대상으로 담아두기
                 }
@@ -43,11 +43,11 @@ public class Main {
             Coordinate realTarget = target.pollFirst();
             while (!target.isEmpty()) {
                 Coordinate compTarget = target.pollFirst();
-                if (realTarget.dist > compTarget.dist) {//거리 비교
+                if (realTarget.dist > compTarget.dist) {//1.거리 비교
                     realTarget = compTarget;
-                } else if (realTarget.dist == compTarget.dist) {//y좌표 비교
+                } else if (realTarget.dist == compTarget.dist) {//2.y좌표 비교
                     if (realTarget.y > compTarget.y) realTarget = compTarget;
-                    else if (realTarget.y == compTarget.y) {//x좌표 비교
+                    else if (realTarget.y == compTarget.y) {//3.x좌표 비교
                         if (realTarget.x > compTarget.x) realTarget = compTarget;
                     }
                 }
