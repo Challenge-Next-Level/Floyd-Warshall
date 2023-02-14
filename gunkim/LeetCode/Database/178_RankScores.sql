@@ -1,0 +1,3 @@
+-- 컬럼 명을 문자열 처럼 만들어줘야 통과임...
+SELECT score, DENSE_RANK() over (ORDER BY score DESC) as 'rank'
+FROM Scores
