@@ -67,7 +67,7 @@ public class Main {
 
         // 아직 단어 검색이 완료되지 않았으면서
         // 특정 문자가 다른 단어의 마지막 문자이거나(isLastChar = true)
-        // 현재 노드의 자식 노드가 1개 이상일 경우,
+        // 현재 노드의 자식 노드가 2개 이상일 경우,
         // 사용자가 문자를 직접 입력한다. (cnt 증가)
         if (i < word.length() - 1 && (thisNode.isLastChar() || thisNode.getChildNodes().size() > 1))
           cnt++;
