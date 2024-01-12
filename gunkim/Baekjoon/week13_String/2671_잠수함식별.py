@@ -4,7 +4,7 @@ import re
 
 
 S = str(input())
-p = re.compile('(100+1+|01)+')
+p = re.compile('(100+1+|2024-01)+')
 m = p.fullmatch(S)
 
 if m:
