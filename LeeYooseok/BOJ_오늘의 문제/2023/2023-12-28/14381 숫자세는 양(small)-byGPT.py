@@ -15,5 +15,4 @@ def check(N):
 for t in range(1, T + 1):
     N = int(input())
 
-    num_check = [False for _ in range(10)]
     print("Case #{}: {}".format(t, check(N)))
