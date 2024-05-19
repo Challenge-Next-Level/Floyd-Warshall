@@ -31,7 +31,7 @@ public class Main {
     int minTime = Integer.MAX_VALUE;
     int maxHeight = 0;
 
-    // 높이 0 ~ 257까지 모든 경우에 대해 탐색
+    // 높이 0 ~ 256까지 모든 경우에 대해 탐색
     for (int i = 0; i < 257; i++) {
       int needs = 0; // 필요한 블럭양
       int get = 0; // 채굴한 블럭양
