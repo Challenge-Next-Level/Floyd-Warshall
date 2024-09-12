@@ -2,7 +2,7 @@
 - DFS 로 문제 해결
 - DFS 해결 방법은 Runtime Error (Recursion Error) 발생
     - 재귀 횟수 한도 초과
-    - 즉, BFS 로 문제 해결해야 함 또는 스택 활용
+    - 즉, BFS 로 문제 해결해야 함 또는 스택_큐 활용
 """
 
 r, c = map(int, input().split())
