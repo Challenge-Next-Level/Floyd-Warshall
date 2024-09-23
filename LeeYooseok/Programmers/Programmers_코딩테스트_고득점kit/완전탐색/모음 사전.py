@@ -1,22 +1,33 @@
-from collections import deque
+target = ""
+alphabets = ['A', 'E', 'I', 'O', 'U']
+answer = 0
 
-queue = deque()
+
 def solution(word):
-    alphabets = ['A', 'E', 'I', 'O', 'U']
+    global target, answer
+    target = word
     answer = 0
 
     for alphabet in alphabets:
-        queue.append(alphabet)
-        answer += 1
+        if dfs(alphabet):
+            return answer
 
-        while queue:
-            new_string = queue.popleft()
-            if new_string == word:
-                return answer
 
-            if len(new_string) == 5:
-                continue
+def dfs(now_string):
+    global answer
+    answer += 1
+    if now_string == target:
+        return True
 
-            for new_alphabet in alphabets:
-                queue.append(new_string + new_alphabet)
-                answer += 1
+    if len(now_string) == 5:
+        return False
+
+    for new_alphabet in alphabets:
+        if dfs(now_string + new_alphabet):
+            return True
+
+
+print(solution("AAAAE"))
+print(solution("AAAE"))
+print(solution("I"))
+print(solution("EIO"))
