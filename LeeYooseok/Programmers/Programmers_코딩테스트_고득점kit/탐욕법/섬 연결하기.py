@@ -1,14 +1,36 @@
 def solution(n, costs):
     answer = 0
-    costs.sort(key=lambda x: x[2])  # 비용을 기준으로 오름차순 정렬
-    connect = set([costs[0][0]])  # 간선 연결 정보를 담는 set
-    while len(connect) != n:
-        for cost in costs:
-            if cost[0] in connect and cost[1] in connect:  # 사이클 형성을 막음
-                continue
-            if cost[0] in connect or cost[1] in connect:  # 기존 간선과 이어져야 함
-                connect.update([cost[0], cost[1]])
-                answer += cost[2]
-                break
+
+    parent = [0 for _ in range(n)]
+    for i in range(n):
+        parent[i] = i
+
+    def find(node):
+        if parent[node] != node:
+            parent[node] = find(parent[node])
+        return parent[node]
+
+    def union(a, b):
+        a = find(a)
+        b = find(b)
+
+        if a < b:
+            parent[b] = a
+        else:
+            parent[a] = b
+
+    edges = list()
+
+    for start, end, cost in costs:
+        edges.append([cost, start, end])
+
+    edges.sort()
+
+    for cost, start, end in edges:
+        if find(start) != find(end):
+            union(start, end)
+            answer += cost
 
     return answer
+
+print(solution(4, [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]]))
