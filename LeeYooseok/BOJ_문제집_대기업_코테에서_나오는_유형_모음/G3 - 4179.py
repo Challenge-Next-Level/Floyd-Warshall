@@ -60,6 +60,7 @@ while deq:
 
                 board[new_fire_y][new_fire_x] = "F"
                 new_fire_list.add((new_fire_x, new_fire_y))
+        # fire_list 갱신 -> 기존의 불은 더이상 번질 이유가 없기 때문에, 새로 번진 불만 넣어준다.
         fire_list = list(new_fire_list)
 
 print("IMPOSSIBLE")
