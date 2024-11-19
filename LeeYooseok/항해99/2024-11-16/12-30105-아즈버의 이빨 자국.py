@@ -19,6 +19,3 @@ for i in range(N):
 
 print(len(answer))
 print(*sorted(answer))
-
-
-
