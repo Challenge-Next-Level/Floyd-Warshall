@@ -7,7 +7,7 @@ for i in range(N):
     max_num = max(number_list[i: min(N, i + S + 1)])
     idx = number_list.index(max_num)
 
-    # 교환 (max_num 을 i 위치로 갖고온다.
+    # 교환 (max_num 을 i 위치로 갖고온다.)
     for j in range(idx, i, -1):
         number_list[j], number_list[j - 1] = number_list[j - 1], number_list[j]
 
