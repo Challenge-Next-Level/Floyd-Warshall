@@ -40,8 +40,8 @@ for _ in range(T):
     n = int(input())
 
     graph = list()
-    total = 0 # 전체 power 합
-    max_total = 0 # 각 요원의 최대 power 들의 합
+    total = 0  # 전체 power 합
+    max_total = 0  # 각 요원의 최대 power 들의 합
     for _ in range(n):
         a, b, c = map(int, input().split())
         power_list = [a, b, c]
@@ -57,13 +57,13 @@ for _ in range(T):
         print(-1)
         continue
 
-    answer = -1e9 # 갤럭시를 가동시키는데 쓰이는 최대 능력치
-    visited = [False for _ in range(n)] # agent 사용했는지 확인
+    answer = -1e9  # 갤럭시를 가동시키는데 쓰이는 최대 능력치
+    visited = [False for _ in range(n)]  # agent 사용했는지 확인
 
     # i 번째 agent 의 첫번째 능력을 사용 하는 상태에서 함수 시작
     for i in range(n):
         visited[i] = True
         check([i], graph[i][0])
-        visited[i] = False # visited 복구
+        visited[i] = False  # visited 복구
 
     print(total - answer)
